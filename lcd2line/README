@@ -1,0 +1,43 @@
+﻿Raspibarry Pi Study project
+Making a digital clock with Raspberry Pi with I2C+MCP23017 on two line LCD.
+Copyright (c) 2013 sean93.park@gmail.com
+
+1. System
+
+Raspberry Pi I2C signal to 16 bit parallel with MCP23017,
+and MCP23017 to 16 characters 2 line LCD.
+
+2. Circuit
+
+Refer image file circuit_rpi_i2d_mcp23017_lcd2line.png file, it's the circuit.
+
+
+3. Application
+
+Simple Two Line Date/Time clock.
+It gets current time from time() and localtime().
+
+
+4. Source
+
+rpi_i2c.cpp: Raspberry Pi I2C control part
+rpi_lcd1602.cpp : 16 character 2 line lcd control part using I2C and MCP23017
+main.cpp : main application sending date/time clock to LCD
+
+
+5. Build
+
+Run make on root. Output is created at build folder.
+Output folder can be changed by modifing makefile.
+
+$ cd raspberrypi-basic/lcd2line
+$ make
+
+
+6. Execution
+
+Copy build/rpilcd file to your raspberry pi.
+You can use samba, scp (ssh copy) or ftp.
+Run in your RPi console or terminal
+
+
