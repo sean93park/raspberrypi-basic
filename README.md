@@ -1,3 +1,5 @@
+*Automatically exported from code.google.com/p/raspberrypi-basic,2015-04-15*
+
 ### Welcome to Raspberry Pi Basic project for beginners
 
 I'm writing down the steps I went with my Raspberry Pi.
